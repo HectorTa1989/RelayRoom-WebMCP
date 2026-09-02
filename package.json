@@ -1,0 +1,38 @@
+{
+  "name": "relayroom",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "node scripts/start.mjs",
+    "dev": "concurrently -n room,buyer,supplier,carrier,api -c cyan,blue,magenta,yellow,green \"npm:dev:room\" \"npm:dev:buyer\" \"npm:dev:supplier\" \"npm:dev:carrier\" \"npm:dev:api\"",
+    "dev:room": "npm run dev -w @relayroom/room",
+    "dev:buyer": "npm run dev -w @relayroom/buyer-portal",
+    "dev:supplier": "npm run dev -w @relayroom/supplier-portal",
+    "dev:carrier": "npm run dev -w @relayroom/carrier-portal",
+    "dev:api": "npm run dev -w @relayroom/api",
+    "demo:providers": "tsx --env-file-if-exists=.env scripts/provider-adapter.ts",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.10.5",
+    "concurrently": "^9.1.2",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "6.4.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
