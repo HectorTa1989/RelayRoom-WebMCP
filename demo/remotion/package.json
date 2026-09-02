@@ -1,0 +1,21 @@
+{
+  "name": "relayroom-demo-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion project that turns the recorded RelayRoom session into the narrated demo film and the LinkedIn cut.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render RelayRoomDemo ../video/relayroom-demo.mp4",
+    "render:linkedin": "remotion render RelayRoomLinkedIn ../video/relayroom-linkedin.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.421",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.421"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.7.2"
+  }
+}

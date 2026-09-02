@@ -1,0 +1,85 @@
+{
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+4%",
+  "pitch": "-2Hz",
+  "beats": [
+    {
+      "id": "b00_open",
+      "chapter": "The problem",
+      "caption": "Three companies. One broken shipment.",
+      "text": "Three companies. One broken shipment. And normally, a human copy-pasting between three portals for the rest of the afternoon. This is RelayRoom."
+    },
+    {
+      "id": "b01_signin",
+      "chapter": "Sign in · entitlements",
+      "caption": "Entitlements are checked server-side, not in the browser.",
+      "text": "We sign in first. Entitlements are checked on the server, not in the browser. The admin account bypasses billing; the free operator sees the Polar paywall instead."
+    },
+    {
+      "id": "b02_trust",
+      "chapter": "Trusted origin boundary",
+      "caption": "Three real origins. No shared backend.",
+      "text": "Up here is the trust bar. Atlas, Northstar, and Vector are three separate origins, each with its own website, its own database, and its own tool count. There is no shared backend behind them."
+    },
+    {
+      "id": "b03_tools",
+      "chapter": "Discovered capabilities",
+      "caption": "Read tools now. Write tools only after approval.",
+      "text": "Open the runtime and you can see exactly what each origin has offered up. Read tools for evidence, write tools for change. RelayRoom asks for these three origins and nothing else."
+    },
+    {
+      "id": "b04_portals",
+      "chapter": "Live partner portals",
+      "caption": "Real partner pages. Manual controls still work.",
+      "text": "And the partners are right here, running as real pages in real iframes, with their own manual controls still working. RelayRoom never scrapes their screens."
+    },
+    {
+      "id": "b05_resolve",
+      "chapter": "Cross-origin discovery",
+      "caption": "One read tool per partner. Normalized answers only.",
+      "text": "Now the actual job. One click. RelayRoom calls exactly one read tool on each partner — the buyer's deadline, the supplier's lots, the carrier's routes — and only the normalized answers ever cross a boundary."
+    },
+    {
+      "id": "b06_plan",
+      "chapter": "Constrained planning",
+      "caption": "The model selects. It cannot invent.",
+      "text": "The solver computes every feasible combination first, then hands only those candidates to the model to pick one and explain it. It can select. It cannot invent, and it cannot execute. If the model is unreachable, the deterministic winner stands, and the badge tells you which one you actually got."
+    },
+    {
+      "id": "b07_route",
+      "chapter": "The recovery plan",
+      "caption": "480 units protected · 12 hours early · +8% cost",
+      "text": "Here is the recovery. Three hundred and ten units from the primary lot, a hundred and seventy from backup, moving on a priority relay. Four hundred and eighty units protected, twelve hours early, at eight percent added cost — inside the buyer's ten percent cap."
+    },
+    {
+      "id": "b08_sequence",
+      "chapter": "Ordered transaction",
+      "caption": "Stage → validate → commit, with rollback on every step.",
+      "text": "Underneath it, the ordered transaction. Stage, validate, commit — every step tagged with the origin that owns it, and every step carrying a compensating rollback. Notice the commit tools are not available yet."
+    },
+    {
+      "id": "b09_approve",
+      "chapter": "Human approval",
+      "caption": "One approval unlocks the write tools.",
+      "text": "One human approval unlocks them. Watch each partner frame pulse as the commits land, in order, inside the company that owns them."
+    },
+    {
+      "id": "b10_audit",
+      "chapter": "Audit receipt",
+      "caption": "Every call: origin, input, result, timestamp.",
+      "text": "Then you get a receipt. Every tool call, with its origin, its input, its result, and its timestamp — and you can export the whole thing as JSON."
+    },
+    {
+      "id": "b11_rollback",
+      "chapter": "Rehearsed failure",
+      "caption": "Carrier fails → supplier step is compensated.",
+      "text": "Now the part that actually matters. Turn on the carrier failure rehearsal and run it again. The supplier reservation commits, the carrier tender fails, and RelayRoom reverses the completed supplier step on its own. The buyer commit is never even attempted."
+    },
+    {
+      "id": "b12_close",
+      "chapter": "Why WebMCP",
+      "caption": "Independent websites cooperating without surrendering control.",
+      "text": "Three independent websites. One coordinated change. Nobody handed over their data, and a human still said yes. That is what WebMCP makes possible."
+    }
+  ]
+}

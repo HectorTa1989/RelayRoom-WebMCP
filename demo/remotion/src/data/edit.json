@@ -1,0 +1,476 @@
+{
+  "fps": 30,
+  "video": "relayroom-capture.mp4",
+  "videoWidth": 1920,
+  "videoHeight": 1080,
+  "wide": {
+    "width": 1920,
+    "height": 1080,
+    "introFrames": 108,
+    "videoFrames": 5135,
+    "videoTrimBefore": 130,
+    "outroFrames": 126,
+    "totalFrames": 5369,
+    "beats": [
+      {
+        "id": "b00_open",
+        "chapter": "The problem",
+        "caption": "Three companies. One broken shipment.",
+        "audio": "audio/b00_open.mp3",
+        "audioFrom": 35,
+        "audioDuration": 279,
+        "shotFrom": 121,
+        "shotDuration": 292
+      },
+      {
+        "id": "b01_signin",
+        "chapter": "Sign in · entitlements",
+        "caption": "Entitlements are checked server-side, not in the browser.",
+        "audio": "audio/b01_signin.mp3",
+        "audioFrom": 413,
+        "audioDuration": 314,
+        "shotFrom": 413,
+        "shotDuration": 328
+      },
+      {
+        "id": "b02_trust",
+        "chapter": "Trusted origin boundary",
+        "caption": "Three real origins. No shared backend.",
+        "audio": "audio/b02_trust.mp3",
+        "audioFrom": 740,
+        "audioDuration": 376,
+        "shotFrom": 740,
+        "shotDuration": 390
+      },
+      {
+        "id": "b03_tools",
+        "chapter": "Discovered capabilities",
+        "caption": "Read tools now. Write tools only after approval.",
+        "audio": "audio/b03_tools.mp3",
+        "audioFrom": 1130,
+        "audioDuration": 346,
+        "shotFrom": 1130,
+        "shotDuration": 359
+      },
+      {
+        "id": "b04_portals",
+        "chapter": "Live partner portals",
+        "caption": "Real partner pages. Manual controls still work.",
+        "audio": "audio/b04_portals.mp3",
+        "audioFrom": 1490,
+        "audioDuration": 307,
+        "shotFrom": 1490,
+        "shotDuration": 321
+      },
+      {
+        "id": "b05_resolve",
+        "chapter": "Cross-origin discovery",
+        "caption": "One read tool per partner. Normalized answers only.",
+        "audio": "audio/b05_resolve.mp3",
+        "audioFrom": 1811,
+        "audioDuration": 415,
+        "shotFrom": 1811,
+        "shotDuration": 430
+      },
+      {
+        "id": "b06_plan",
+        "chapter": "Constrained planning",
+        "caption": "The model selects. It cannot invent.",
+        "audio": "audio/b06_plan.mp3",
+        "audioFrom": 2241,
+        "audioDuration": 554,
+        "shotFrom": 2241,
+        "shotDuration": 569
+      },
+      {
+        "id": "b07_route",
+        "chapter": "The recovery plan",
+        "caption": "480 units protected · 12 hours early · +8% cost",
+        "audio": "audio/b07_route.mp3",
+        "audioFrom": 2810,
+        "audioDuration": 474,
+        "shotFrom": 2810,
+        "shotDuration": 488
+      },
+      {
+        "id": "b08_sequence",
+        "chapter": "Ordered transaction",
+        "caption": "Stage → validate → commit, with rollback on every step.",
+        "audio": "audio/b08_sequence.mp3",
+        "audioFrom": 3298,
+        "audioDuration": 397,
+        "shotFrom": 3298,
+        "shotDuration": 411
+      },
+      {
+        "id": "b09_approve",
+        "chapter": "Human approval",
+        "caption": "One approval unlocks the write tools.",
+        "audio": "audio/b09_approve.mp3",
+        "audioFrom": 3709,
+        "audioDuration": 248,
+        "shotFrom": 3709,
+        "shotDuration": 341
+      },
+      {
+        "id": "b10_audit",
+        "chapter": "Audit receipt",
+        "caption": "Every call: origin, input, result, timestamp.",
+        "audio": "audio/b10_audit.mp3",
+        "audioFrom": 4050,
+        "audioDuration": 271,
+        "shotFrom": 4050,
+        "shotDuration": 303
+      },
+      {
+        "id": "b11_rollback",
+        "chapter": "Rehearsed failure",
+        "caption": "Carrier fails → supplier step is compensated.",
+        "audio": "audio/b11_rollback.mp3",
+        "audioFrom": 4353,
+        "audioDuration": 467,
+        "shotFrom": 4353,
+        "shotDuration": 542
+      },
+      {
+        "id": "b12_close",
+        "chapter": "Why WebMCP",
+        "caption": "Independent websites cooperating without surrendering control.",
+        "audio": "audio/b12_close.mp3",
+        "audioFrom": 4895,
+        "audioDuration": 319,
+        "shotFrom": 4895,
+        "shotDuration": 333
+      }
+    ],
+    "highlights": [
+      {
+        "tone": "success",
+        "label": "Signed in · all access",
+        "rects": [
+          {
+            "x": 1676,
+            "y": 9,
+            "width": 147,
+            "height": 54
+          }
+        ],
+        "from": 659,
+        "duration": 60
+      },
+      {
+        "tone": "success",
+        "label": "3 partner origins answered",
+        "rects": [
+          {
+            "x": 84,
+            "y": 486,
+            "width": 446,
+            "height": 111
+          },
+          {
+            "x": 517,
+            "y": 486,
+            "width": 446,
+            "height": 111
+          },
+          {
+            "x": 950,
+            "y": 486,
+            "width": 446,
+            "height": 111
+          }
+        ],
+        "from": 2039,
+        "duration": 72
+      },
+      {
+        "tone": "success",
+        "label": "3/3 verified",
+        "rects": [
+          {
+            "x": 1311,
+            "y": 451,
+            "width": 80,
+            "height": 39
+          }
+        ],
+        "from": 2070,
+        "duration": 54
+      },
+      {
+        "tone": "change",
+        "label": "Plan source + feasibility",
+        "rects": [
+          {
+            "x": 1637,
+            "y": 451,
+            "width": 194,
+            "height": 73
+          }
+        ],
+        "from": 2298,
+        "duration": 60
+      },
+      {
+        "tone": "attention",
+        "label": "Read + stage tools only — 2 per origin",
+        "rects": [
+          {
+            "x": 204,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          },
+          {
+            "x": 322,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          },
+          {
+            "x": 441,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          }
+        ],
+        "from": 3544,
+        "duration": 72
+      },
+      {
+        "tone": "success",
+        "label": "Commit tools unlocked — 3 per origin",
+        "rects": [
+          {
+            "x": 204,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          },
+          {
+            "x": 322,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          },
+          {
+            "x": 441,
+            "y": 76,
+            "width": 126,
+            "height": 45
+          }
+        ],
+        "from": 4007,
+        "duration": 78
+      },
+      {
+        "tone": "attention",
+        "label": "Carrier failure armed",
+        "rects": [
+          {
+            "x": 1427,
+            "y": 987,
+            "width": 406,
+            "height": 41
+          }
+        ],
+        "from": 4586,
+        "duration": 57
+      },
+      {
+        "tone": "fail",
+        "label": "Carrier commit failed",
+        "rects": [
+          {
+            "x": 1313,
+            "y": 410,
+            "width": 615,
+            "height": 102
+          }
+        ],
+        "from": 4761,
+        "duration": 69
+      },
+      {
+        "tone": "success",
+        "label": "Supplier hold released — compensated",
+        "rects": [
+          {
+            "x": 1313,
+            "y": 323,
+            "width": 615,
+            "height": 102
+          }
+        ],
+        "from": 4858,
+        "duration": 72
+      }
+    ]
+  },
+  "linkedin": {
+    "width": 1080,
+    "height": 1350,
+    "introFrames": 72,
+    "totalFrames": 1228,
+    "beats": [
+      {
+        "id": "l0_hook",
+        "caption": "One click. Three companies.",
+        "focus": "wide",
+        "audio": "audio-linkedin/l0_hook.mp3",
+        "from": 72,
+        "duration": 119,
+        "trimBefore": 1824,
+        "highlights": []
+      },
+      {
+        "id": "l1_evidence",
+        "caption": "One read tool per partner. Nothing copied between portals.",
+        "focus": "left",
+        "audio": "audio-linkedin/l1_evidence.mp3",
+        "from": 191,
+        "duration": 270,
+        "trimBefore": 2001,
+        "highlights": [
+          {
+            "tone": "success",
+            "label": "3 partner origins answered",
+            "rects": [
+              {
+                "x": 84,
+                "y": 486,
+                "width": 446,
+                "height": 111
+              },
+              {
+                "x": 517,
+                "y": 486,
+                "width": 446,
+                "height": 111
+              },
+              {
+                "x": 950,
+                "y": 486,
+                "width": 446,
+                "height": 111
+              }
+            ],
+            "from": 61,
+            "duration": 72
+          },
+          {
+            "tone": "success",
+            "label": "3/3 verified",
+            "rects": [
+              {
+                "x": 1311,
+                "y": 451,
+                "width": 80,
+                "height": 39
+              }
+            ],
+            "from": 91,
+            "duration": 54
+          }
+        ]
+      },
+      {
+        "id": "l2_plan",
+        "caption": "480 units · 12 hours early · +8% cost",
+        "focus": "wide",
+        "audio": "audio-linkedin/l2_plan.mp3",
+        "from": 461,
+        "duration": 175,
+        "trimBefore": 2847,
+        "highlights": []
+      },
+      {
+        "id": "l3_approve",
+        "caption": "Write tools unlock only after a human approves.",
+        "focus": "fit",
+        "audio": "audio-linkedin/l3_approve.mp3",
+        "from": 636,
+        "duration": 199,
+        "trimBefore": 3882,
+        "highlights": [
+          {
+            "tone": "success",
+            "label": "Commit tools unlocked — 3 per origin",
+            "rects": [
+              {
+                "x": 204,
+                "y": 76,
+                "width": 126,
+                "height": 45
+              },
+              {
+                "x": 322,
+                "y": 76,
+                "width": 126,
+                "height": 45
+              },
+              {
+                "x": 441,
+                "y": 76,
+                "width": 126,
+                "height": 45
+              }
+            ],
+            "from": 147,
+            "duration": 52
+          }
+        ]
+      },
+      {
+        "id": "l4_rollback",
+        "caption": "Carrier fails → supplier step reversed automatically.",
+        "focus": "right",
+        "audio": "audio-linkedin/l4_rollback.mp3",
+        "from": 835,
+        "duration": 166,
+        "trimBefore": 4744,
+        "highlights": [
+          {
+            "tone": "fail",
+            "label": "Carrier commit failed",
+            "rects": [
+              {
+                "x": 1313,
+                "y": 410,
+                "width": 615,
+                "height": 102
+              }
+            ],
+            "from": 39,
+            "duration": 69
+          },
+          {
+            "tone": "success",
+            "label": "Supplier hold released — compensated",
+            "rects": [
+              {
+                "x": 1313,
+                "y": 323,
+                "width": 615,
+                "height": 102
+              }
+            ],
+            "from": 136,
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "id": "l5_close",
+        "caption": "Independent websites cooperating without surrendering control.",
+        "focus": "wide",
+        "audio": "audio-linkedin/l5_close.mp3",
+        "from": 1001,
+        "duration": 227,
+        "trimBefore": null,
+        "highlights": []
+      }
+    ]
+  }
+}

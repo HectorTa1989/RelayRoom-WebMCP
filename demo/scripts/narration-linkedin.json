@@ -1,0 +1,64 @@
+{
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "pitch": "-2Hz",
+  "beats": [
+    {
+      "id": "l0_hook",
+      "focus": "wide",
+      "caption": "One click. Three companies.",
+      "text": "Three companies. One broken shipment. One click.",
+      "anchor": {
+        "beat": "b05_resolve",
+        "offset": -0.3
+      }
+    },
+    {
+      "id": "l1_evidence",
+      "focus": "left",
+      "caption": "One read tool per partner. Nothing copied between portals.",
+      "text": "RelayRoom calls a single read tool on each partner's own website. The buyer's deadline, the supplier's lots, the carrier's routes.",
+      "anchor": {
+        "mark": "3 partner origins answered",
+        "offset": -2.0
+      }
+    },
+    {
+      "id": "l2_plan",
+      "focus": "wide",
+      "caption": "480 units · 12 hours early · +8% cost",
+      "text": "Four hundred and eighty units protected, twelve hours early, at eight percent added cost.",
+      "anchor": {
+        "beat": "b07_route",
+        "offset": 0.5
+      }
+    },
+    {
+      "id": "l3_approve",
+      "focus": "fit",
+      "caption": "Write tools unlock only after a human approves.",
+      "text": "Write tools stay locked until a human approves. Then every commit lands inside the company that owns it.",
+      "anchor": {
+        "mark": "Commit tools unlocked — 3 per origin",
+        "offset": -4.9
+      }
+    },
+    {
+      "id": "l4_rollback",
+      "focus": "right",
+      "caption": "Carrier fails → supplier step reversed automatically.",
+      "text": "And when the carrier tender fails, the completed supplier step is reversed automatically.",
+      "anchor": {
+        "mark": "Carrier commit failed",
+        "offset": -1.3
+      }
+    },
+    {
+      "id": "l5_close",
+      "focus": "wide",
+      "caption": "Independent websites cooperating without surrendering control.",
+      "text": "Three independent websites. One coordinated change. Nobody surrendered their data. That is WebMCP.",
+      "card": "outro"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "video": "relayroom-capture.mp4",
+  "videoWidth": 1920,
+  "videoHeight": 1080,
+  "videoDurationSec": 176.2,
+  "wallClockSec": 175.398,
+  "firstVisibleSec": 4.315,
+  "clockDriftRatio": 1.00457,
+  "cssScale": 1.25,
+  "beats": [
+    {
+      "id": "b00_open",
+      "startSec": 0.421,
+      "endSec": 10.115,
+      "audioSec": 9.288,
+      "actionSec": 3.969
+    },
+    {
+      "id": "b01_signin",
+      "startSec": 10.115,
+      "endSec": 20.984,
+      "audioSec": 10.464,
+      "actionSec": 9.059
+    },
+    {
+      "id": "b02_trust",
+      "startSec": 20.985,
+      "endSec": 33.914,
+      "audioSec": 12.528,
+      "actionSec": 7.149
+    },
+    {
+      "id": "b03_tools",
+      "startSec": 33.914,
+      "endSec": 45.842,
+      "audioSec": 11.52,
+      "actionSec": 9.049
+    },
+    {
+      "id": "b04_portals",
+      "startSec": 45.843,
+      "endSec": 56.504,
+      "audioSec": 10.248,
+      "actionSec": 9.467
+    },
+    {
+      "id": "b05_resolve",
+      "startSec": 56.505,
+      "endSec": 70.763,
+      "audioSec": 13.848,
+      "actionSec": 9.317
+    },
+    {
+      "id": "b06_plan",
+      "startSec": 70.764,
+      "endSec": 89.645,
+      "audioSec": 18.48,
+      "actionSec": 8.504
+    },
+    {
+      "id": "b07_route",
+      "startSec": 89.645,
+      "endSec": 105.845,
+      "audioSec": 15.792,
+      "actionSec": 9.964
+    },
+    {
+      "id": "b08_sequence",
+      "startSec": 105.845,
+      "endSec": 119.475,
+      "audioSec": 13.224,
+      "actionSec": 9.175
+    },
+    {
+      "id": "b09_approve",
+      "startSec": 119.475,
+      "endSec": 130.798,
+      "audioSec": 8.28,
+      "actionSec": 11.319
+    },
+    {
+      "id": "b10_audit",
+      "startSec": 130.798,
+      "endSec": 140.864,
+      "audioSec": 9.024,
+      "actionSec": 10.056
+    },
+    {
+      "id": "b11_rollback",
+      "startSec": 140.864,
+      "endSec": 158.835,
+      "audioSec": 15.552,
+      "actionSec": 17.956
+    },
+    {
+      "id": "b12_close",
+      "startSec": 158.836,
+      "endSec": 169.877,
+      "audioSec": 10.632,
+      "actionSec": 8.673
+    }
+  ],
+  "marks": [
+    {
+      "atSec": 18.27,
+      "holdSec": 2,
+      "tone": "success",
+      "label": "Signed in · all access",
+      "rects": [
+        {
+          "x": 1341.063,
+          "y": 7.2,
+          "width": 117.938,
+          "height": 42.8
+        }
+      ]
+    },
+    {
+      "atSec": 64.09,
+      "holdSec": 2.4,
+      "tone": "success",
+      "label": "3 partner origins answered",
+      "rects": [
+        {
+          "x": 66.8,
+          "y": 389,
+          "width": 356.463,
+          "height": 89
+        },
+        {
+          "x": 413.263,
+          "y": 389,
+          "width": 356.463,
+          "height": 89
+        },
+        {
+          "x": 759.725,
+          "y": 389,
+          "width": 356.475,
+          "height": 89
+        }
+      ]
+    },
+    {
+      "atSec": 65.109,
+      "holdSec": 1.8,
+      "tone": "success",
+      "label": "3/3 verified",
+      "rects": [
+        {
+          "x": 1048.988,
+          "y": 360.8,
+          "width": 64.213,
+          "height": 30.8
+        }
+      ]
+    },
+    {
+      "atSec": 72.681,
+      "holdSec": 2,
+      "tone": "change",
+      "label": "Plan source + feasibility",
+      "rects": [
+        {
+          "x": 1309.325,
+          "y": 360.4,
+          "width": 154.875,
+          "height": 58
+        }
+      ]
+    },
+    {
+      "atSec": 114.006,
+      "holdSec": 2.4,
+      "tone": "attention",
+      "label": "Read + stage tools only — 2 per origin",
+      "rects": [
+        {
+          "x": 162.913,
+          "y": 60.6,
+          "width": 100.913,
+          "height": 36
+        },
+        {
+          "x": 257.825,
+          "y": 60.6,
+          "width": 100.913,
+          "height": 36
+        },
+        {
+          "x": 352.738,
+          "y": 60.6,
+          "width": 100.912,
+          "height": 36
+        }
+      ]
+    },
+    {
+      "atSec": 129.387,
+      "holdSec": 2.6,
+      "tone": "success",
+      "label": "Commit tools unlocked — 3 per origin",
+      "rects": [
+        {
+          "x": 162.913,
+          "y": 60.6,
+          "width": 100.913,
+          "height": 36
+        },
+        {
+          "x": 257.825,
+          "y": 60.6,
+          "width": 100.913,
+          "height": 36
+        },
+        {
+          "x": 352.738,
+          "y": 60.6,
+          "width": 100.912,
+          "height": 36
+        }
+      ]
+    },
+    {
+      "atSec": 148.577,
+      "holdSec": 1.9,
+      "tone": "attention",
+      "label": "Carrier failure armed",
+      "rects": [
+        {
+          "x": 1141.8,
+          "y": 789.4,
+          "width": 324.4,
+          "height": 32.8
+        }
+      ]
+    },
+    {
+      "atSec": 154.407,
+      "holdSec": 2.3,
+      "tone": "fail",
+      "label": "Carrier commit failed",
+      "rects": [
+        {
+          "x": 1050,
+          "y": 328.2,
+          "width": 492,
+          "height": 81.8
+        }
+      ]
+    },
+    {
+      "atSec": 157.616,
+      "holdSec": 2.4,
+      "tone": "success",
+      "label": "Supplier hold released — compensated",
+      "rects": [
+        {
+          "x": 1050,
+          "y": 258.4,
+          "width": 492,
+          "height": 81.8
+        }
+      ]
+    }
+  ]
+}
