@@ -1,0 +1,40 @@
+services:
+  relayroom:
+    build: .
+    ports:
+      - "4173:4173"
+      - "4174:4174"
+      - "4175:4175"
+      - "4176:4176"
+      - "8784:8784"
+      - "8785:8785"
+      - "8786:8786"
+      - "8787:8787"
+    environment:
+      ROOM_ORIGIN: http://localhost:4173
+      RELAYROOM_DATA_DIR: /app/.data
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Set ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set a strong ADMIN_PASSWORD}
+      SESSION_SECRET: ${SESSION_SECRET:?Set a random SESSION_SECRET}
+      POLAR_SERVER: sandbox
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5.4}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.7-flash}
+      POLAR_ACCESS_TOKEN: ${POLAR_ACCESS_TOKEN:-}
+      POLAR_PRODUCT_ID: ${POLAR_PRODUCT_ID:-}
+      POLAR_WEBHOOK_SECRET: ${POLAR_WEBHOOK_SECRET:-}
+      BUYER_BACKEND: ${BUYER_BACKEND:-local}
+      SUPPLIER_BACKEND: ${SUPPLIER_BACKEND:-local}
+      CARRIER_BACKEND: ${CARRIER_BACKEND:-local}
+      BUYER_CONNECTOR_URL: ${BUYER_CONNECTOR_URL:-}
+      BUYER_CONNECTOR_TOKEN: ${BUYER_CONNECTOR_TOKEN:-}
+      SUPPLIER_CONNECTOR_URL: ${SUPPLIER_CONNECTOR_URL:-}
+      SUPPLIER_CONNECTOR_TOKEN: ${SUPPLIER_CONNECTOR_TOKEN:-}
+      CARRIER_CONNECTOR_URL: ${CARRIER_CONNECTOR_URL:-}
+      CARRIER_CONNECTOR_TOKEN: ${CARRIER_CONNECTOR_TOKEN:-}
+    volumes:
+      - relayroom-data:/app/.data
+
+volumes:
+  relayroom-data:
