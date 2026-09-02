@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/operations" },
+    { "path": "./packages/contracts" },
+    { "path": "./packages/simulator" },
+    { "path": "./packages/ui" },
+    { "path": "./apps/api" },
+    { "path": "./apps/room" },
+    { "path": "./apps/buyer-portal" },
+    { "path": "./apps/supplier-portal" },
+    { "path": "./apps/carrier-portal" }
+  ]
+}

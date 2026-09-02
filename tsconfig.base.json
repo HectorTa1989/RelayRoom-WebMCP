@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@relayroom/operations": ["packages/operations/src/index.ts"],
+      "@relayroom/contracts": ["packages/contracts/src/index.ts"],
+      "@relayroom/simulator": ["packages/simulator/src/index.ts"],
+      "@relayroom/ui": ["packages/ui/src/index.ts"]
+    }
+  }
+}
