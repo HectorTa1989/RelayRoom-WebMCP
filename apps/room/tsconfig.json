@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "composite": true, "noEmit": false, "declaration": true, "outDir": "dist-ts" },
+  "include": ["src", "vite.config.ts"],
+  "references": [{ "path": "../../packages/contracts" }, { "path": "../../packages/simulator" }, { "path": "../../packages/ui" }]
+}

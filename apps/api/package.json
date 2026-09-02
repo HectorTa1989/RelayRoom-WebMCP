@@ -1,0 +1,9 @@
+{
+  "name": "@relayroom/api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "tsx watch --env-file-if-exists=../../.env src/server.ts", "build": "tsc -b", "start": "node --env-file-if-exists=../../.env dist/server.js" },
+  "dependencies": { "@relayroom/operations": "*", "@polar-sh/sdk": "^0.34.0", "@relayroom/contracts": "*", "@relayroom/simulator": "*", "cors": "^2.8.5", "express": "^5.1.0", "jose": "^6.0.8", "openai": "^5.19.1" },
+  "devDependencies": { "@types/cors": "^2.8.17", "@types/express": "^5.0.1", "tsx": "^4.19.2", "typescript": "^5.7.2" }
+}
