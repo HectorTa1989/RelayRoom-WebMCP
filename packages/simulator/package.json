@@ -1,0 +1,11 @@
+{
+  "name": "@relayroom/simulator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": { ".": { "types": "./dist/src/index.d.ts", "default": "./dist/src/index.js" } },
+  "scripts": { "build": "tsc -b" },
+  "dependencies": { "@relayroom/contracts": "*" },
+  "devDependencies": { "typescript": "^5.7.2" }
+}
