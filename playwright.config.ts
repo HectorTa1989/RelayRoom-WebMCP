@@ -1,0 +1,47 @@
+import { defineConfig, devices } from "@playwright/test";
+import path from "node:path";
+
+export default defineConfig({
+  testDir: "./tests/e2e",
+  fullyParallel: false,
+  timeout: 45_000,
+  expect: { timeout: 8_000 },
+  use: {
+    baseURL: "http://localhost:4273",
+    trace: "retain-on-failure",
+    screenshot: "only-on-failure",
+  },
+  webServer: {
+    command: "npm run dev",
+    url: "http://localhost:8887/api/health",
+    reuseExistingServer: false,
+    env: {
+      RELAYROOM_DATA_DIR: path.resolve(".data", `e2e-${Date.now()}`),
+      RELAYROOM_DEMO: "true",
+      NODE_ENV: "development",
+      ADMIN_EMAIL: "admin@test.local",
+      ADMIN_PASSWORD: "test-admin-password",
+      SESSION_SECRET: "isolated-test-session-secret-with-32-characters",
+      OPENAI_API_KEY: "",
+      GEMINI_API_KEY: "",
+      BUYER_BACKEND: "local",
+      SUPPLIER_BACKEND: "local",
+      CARRIER_BACKEND: "local",
+      ROOM_ORIGIN: "http://localhost:4273",
+      VITE_ROOM_ORIGIN: "http://localhost:4273",
+      VITE_BUYER_ORIGIN: "http://localhost:4274",
+      VITE_SUPPLIER_ORIGIN: "http://localhost:4275",
+      VITE_CARRIER_ORIGIN: "http://localhost:4276",
+      PORT: "8887",
+      VITE_API_ORIGIN: "http://localhost:8887",
+      BUYER_API_PORT: "8884",
+      SUPPLIER_API_PORT: "8885",
+      CARRIER_API_PORT: "8886",
+      BUYER_API_URL: "http://localhost:8884",
+      SUPPLIER_API_URL: "http://localhost:8885",
+      CARRIER_API_URL: "http://localhost:8886",
+    },
+    timeout: 120_000,
+  },
+  projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
+});
