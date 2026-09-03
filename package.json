@@ -17,6 +17,7 @@
     "dev:api": "npm run dev -w @relayroom/api",
     "demo:providers": "tsx --env-file-if-exists=.env scripts/provider-adapter.ts",
     "build": "npm run build --workspaces --if-present",
+    "build:site": "node scripts/build-site.mjs",
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",

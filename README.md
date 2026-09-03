@@ -126,6 +126,20 @@ New databases are `buyer-operations-v2.sqlite`, `supplier-operations-v2.sqlite`,
 
 ## Build and serve
 
+### ChatGPT Sites packaging
+
+The repository now includes `.openai/hosting.json` for a static Sites deployment. Because RelayRoom has separate partner portals and a server API, this Site is the room frontend only; the API and buyer/supplier/carrier origins must already be deployed over HTTPS. The build refuses localhost origins so a published Site cannot silently point at your computer:
+
+```powershell
+$env:VITE_API_ORIGIN="https://api.example.com"
+$env:VITE_BUYER_ORIGIN="https://buyer.example.com"
+$env:VITE_SUPPLIER_ORIGIN="https://supplier.example.com"
+$env:VITE_CARRIER_ORIGIN="https://carrier.example.com"
+npm run build:site
+```
+
+After that successful build, create a Site from this project and deploy the saved version. The Sites deployment response/dashboard provides the live URL. The three portal builds can be published as separate Sites or hosted by the same HTTPS reverse proxy; they must retain their exact origins in the four `VITE_*_ORIGIN` variables. Sites does not replace the API, SQLite database, provider adapter, or server-side secrets.
+
 ```powershell
 npm run typecheck
 npm test
